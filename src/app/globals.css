@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --orange: #0f0f0f;
+  --orange-hover: #333333;
+  --black: #0f0f0f;
+  --gray-600: #4b4b4b;
+  --gray-400: #9ca3af;
+  --gray-200: #e5e5e5;
+  --gray-50: #f9f9f9;
+  --white: #ffffff;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+}
+
+@theme inline {
+  --color-orange: var(--orange);
+  --color-orange-hover: var(--orange-hover);
+  --color-brand-black: var(--black);
+  --color-gray-600: var(--gray-600);
+  --color-gray-400: var(--gray-400);
+  --color-gray-200: var(--gray-200);
+  --color-gray-50: var(--gray-50);
+  --font-sans: var(--font-plus-jakarta);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+  font-family: var(--font-plus-jakarta), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container utility */
+.container-site {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container-site {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
